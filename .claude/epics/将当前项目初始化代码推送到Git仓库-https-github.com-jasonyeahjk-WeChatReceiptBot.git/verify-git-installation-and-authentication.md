@@ -2,9 +2,9 @@
 name: Verify Git installation and authentication
 status: closed
 created: 2025-09-06T04:37:23Z
-updated: 2025-09-06T04:37:23Z
+updated: 2025-09-06T08:13:09Z
 epic: 将当前项目初始化代码推送到Git仓库 https://github.com/jasonyeahjk/WeChatReceiptBot.git
-github: [Will be updated when synced to GitHub]
+github: https://github.com/jasonyeahjk/WeChatReceiptDotnetBot/issues/3
 dependencies: []
 ---
 
