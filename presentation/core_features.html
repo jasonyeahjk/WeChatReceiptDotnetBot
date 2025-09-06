@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>核心功能</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: linear-gradient(to bottom right, #e0f7fa, #bbdefb);
+        color: #202124;
+        font-family: sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 40px;
+        gap: 40px;
+      }
+      .title-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 2px solid #1a73e8;
+      }
+      .main-title {
+        font-size: 36px;
+        font-weight: bold;
+        color: #1a73e8;
+        text-align: center;
+      }
+      .content-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .features-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .feature-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+      }
+      .feature-icon {
+        font-size: 24px;
+        color: #34a853;
+        margin-right: 15px;
+        margin-top: 2px;
+      }
+      .feature-content h3 {
+        font-size: 22px;
+        font-weight: bold;
+        color: #34a853;
+        margin-bottom: 5px;
+      }
+      .feature-content p {
+        font-size: 16px;
+        line-height: 1.4;
+      }
+      .image-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .feature-image {
+        max-width: 100%;
+        height: 300px;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="title-section">
+        <h1 class="main-title">核心功能</h1>
+      </div>
+      <div class="content-section">
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <div class="feature-content">
+              <h3>单据识别</h3>
+              <p>使用Donut模型自动识别收据和支付记录，提取关键信息，减少手动输入。</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-file-contract"></i>
+            </div>
+            <div class="feature-content">
+              <h3>智能合约生成</h3>
+              <p>基于识别结果自动生成智能合约，确保记账透明和不可篡改。</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="feature-content">
+              <h3>分布式记账</h3>
+              <p>多用户可以参与同一账本的记账和查询，实现去中心化协作。</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-user-chart"></i>
+            </div>
+            <div class="feature-content">
+              <h3>用户画像分析</h3>
+              <p>使用图数据库存储和分析用户关系和行为，提供个性化服务。</p>
+            </div>
+          </div>
+        </div>
+        <div class="image-section">
+          <img src="/home/ubuntu/WeChatReceiptBot/presentation/images/core_features.png" alt="Core Features Illustration" class="feature-image">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

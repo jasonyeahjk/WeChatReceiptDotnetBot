@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DonutPaymentService.API", "DonutPaymentService.API\DonutPaymentService.API.csproj", "{732067D6-F803-2675-E977-8DF5874D8F7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DonutReceiptService.API", "DonutReceiptService.API\DonutReceiptService.API.csproj", "{64338E9E-83C3-5563-18FC-A4BB72F36C03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web3Service.API", "Web3Service.API\Web3Service.API.csproj", "{E399FBF2-4BFD-384B-61B0-28D72D98468A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeChatReceiptBot.API", "WeChatReceiptBot.API\WeChatReceiptBot.API.csproj", "{26E71B8A-B6C7-DFAB-CE10-CA747E284DF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackEnd", "BackEnd", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4DB44303-3ACE-4724-8F6C-9FA224A224C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "python", "python", "{B49D2BB9-32B6-4423-A9A7-462490432057}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{628304DE-BB48-4A63-AA65-C2BA84446C2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{CEF5160D-FF0A-4DBD-A231-0C7F150AF943}"
+	ProjectSection(SolutionItems) = preProject
+		CLAUDE.md = CLAUDE.md
+		DEPLOYMENT_GUIDE.md = DEPLOYMENT_GUIDE.md
+		project_documentation.md = project_documentation.md
+		REFACTORING_SUMMARY.md = REFACTORING_SUMMARY.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{732067D6-F803-2675-E977-8DF5874D8F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{732067D6-F803-2675-E977-8DF5874D8F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{732067D6-F803-2675-E977-8DF5874D8F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{732067D6-F803-2675-E977-8DF5874D8F7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64338E9E-83C3-5563-18FC-A4BB72F36C03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64338E9E-83C3-5563-18FC-A4BB72F36C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64338E9E-83C3-5563-18FC-A4BB72F36C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64338E9E-83C3-5563-18FC-A4BB72F36C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E399FBF2-4BFD-384B-61B0-28D72D98468A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E399FBF2-4BFD-384B-61B0-28D72D98468A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E399FBF2-4BFD-384B-61B0-28D72D98468A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E399FBF2-4BFD-384B-61B0-28D72D98468A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26E71B8A-B6C7-DFAB-CE10-CA747E284DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26E71B8A-B6C7-DFAB-CE10-CA747E284DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26E71B8A-B6C7-DFAB-CE10-CA747E284DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26E71B8A-B6C7-DFAB-CE10-CA747E284DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{732067D6-F803-2675-E977-8DF5874D8F7B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{64338E9E-83C3-5563-18FC-A4BB72F36C03} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{E399FBF2-4BFD-384B-61B0-28D72D98468A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{26E71B8A-B6C7-DFAB-CE10-CA747E284DF4} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {4DB44303-3ACE-4724-8F6C-9FA224A224C9}
+		{B49D2BB9-32B6-4423-A9A7-462490432057} = {4DB44303-3ACE-4724-8F6C-9FA224A224C9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77C43AEB-6900-4E2C-9A2F-E60B59F70498}
+	EndGlobalSection
+EndGlobal

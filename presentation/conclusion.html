@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>总结与展望</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: linear-gradient(to bottom right, #e0f7fa, #bbdefb);
+        color: #202124;
+        font-family: sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 40px;
+        gap: 40px;
+      }
+      .title-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 2px solid #1a73e8;
+      }
+      .main-title {
+        font-size: 36px;
+        font-weight: bold;
+        color: #1a73e8;
+        text-align: center;
+      }
+      .content-section {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 30px;
+      }
+      .text-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .content-item h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #34a853;
+        margin-bottom: 10px;
+      }
+      .content-item ul {
+        font-size: 18px;
+        line-height: 1.4;
+        padding-left: 20px;
+        list-style-type: disc;
+      }
+      .content-item li {
+        margin-bottom: 8px;
+      }
+      .image-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .conclusion-image {
+        max-width: 100%;
+        height: 320px;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="title-section">
+        <h1 class="main-title">总结与展望</h1>
+      </div>
+      <div class="content-section">
+        <div class="text-content">
+          <div class="content-item">
+            <h3>项目总结</h3>
+            <ul>
+              <li>成功构建基于Web3和AI的分布式记账平台</li>
+              <li>实现了智能单据识别、链上记账和分布式管理</li>
+              <li>融合了图数据库、实时数据仓库等前沿技术</li>
+              <li>提供了安全、透明、高效的记账解决方案</li>
+            </ul>
+          </div>
+          <div class="content-item">
+            <h3>未来展望</h3>
+            <ul>
+              <li>支持多链部署，扩展应用场景</li>
+              <li>集成更多AI功能，提升智能化水平</li>
+              <li>开发移动端原生应用，优化用户体验</li>
+              <li>探索DeFi集成，实现更多金融服务</li>
+            </ul>
+          </div>
+        </div>
+        <div class="image-section">
+          <img src="/home/ubuntu/WeChatReceiptBot/presentation/images/future_growth.png" alt="Future Growth" class="conclusion-image">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

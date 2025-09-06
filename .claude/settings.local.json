@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/E:\\DevOps\\WeChatReceiptBot/**)",
+      "Read(/E:\\DevOps\\WeChatReceiptBot/**)",
+      "Read(/E:\\DevOps\\WeChatReceiptBot/**)",
+      "Read(/E:\\DevOps\\WeChatReceiptBot/**)",
+      "Read(/E:\\DevOps\\WeChatReceiptBot/**)",
+      "Read(/E:\\DevOps\\WeChatReceiptBot/**)",
+      "Read(/E:\\DevOps\\WeChatReceiptBot\\.claude\\epics\\将当前项目初始化代码推送到Git仓库-https-github.com-jasonyeahjk-WeChatReceiptBot.git/**)",
+      "Bash(git push:*)",
+      "Bash(git ls-remote:*)",
+      "Read(/E:\\tmp/**)",
+      "Bash(git init:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

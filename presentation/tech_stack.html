@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术栈</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: linear-gradient(to bottom right, #e0f7fa, #bbdefb);
+        color: #202124;
+        font-family: sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 40px;
+        gap: 40px;
+      }
+      .title-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 2px solid #1a73e8;
+      }
+      .main-title {
+        font-size: 36px;
+        font-weight: bold;
+        color: #1a73e8;
+        text-align: center;
+      }
+      .content-section {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 30px;
+      }
+      .tech-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .tech-image img {
+        max-width: 100%;
+        height: 280px;
+        object-fit: contain;
+      }
+      .tech-categories {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .tech-category {
+        padding: 15px;
+      }
+      .tech-category h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #34a853;
+        margin-bottom: 10px;
+      }
+      .tech-list {
+        list-style-type: none;
+        padding: 0;
+      }
+      .tech-list li {
+        font-size: 18px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+      }
+      .tech-list li:before {
+        content: "•";
+        color: #1a73e8;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="title-section">
+        <h1 class="main-title">技术栈</h1>
+      </div>
+      <div class="content-section">
+        <div class="tech-image">
+          <img src="/home/ubuntu/WeChatReceiptBot/presentation/images/tech_stack_logos.png" alt="Technology Stack" />
+        </div>
+        <div class="tech-categories">
+          <div class="tech-category">
+            <h3>后端技术</h3>
+            <ul class="tech-list">
+              <li>.NET 8 Web API</li>
+              <li>Entity Framework Core</li>
+              <li>NebulaGraph 图数据库</li>
+              <li>Apache Doris 实时数据仓库</li>
+              <li>JWT 认证</li>
+            </ul>
+          </div>
+          <div class="tech-category">
+            <h3>前端技术</h3>
+            <ul class="tech-list">
+              <li>Vue 3 框架</li>
+              <li>Tailwind CSS</li>
+              <li>Axios HTTP 客户端</li>
+              <li>Web3.js 区块链交互</li>
+            </ul>
+          </div>
+          <div class="tech-category">
+            <h3>AI 与图像识别</h3>
+            <ul class="tech-list">
+              <li>Donut 文档理解模型</li>
+              <li>Flask 识别服务 API</li>
+              <li>OpenCV 图像处理</li>
+            </ul>
+          </div>
+          <div class="tech-category">
+            <h3>区块链技术</h3>
+            <ul class="tech-list">
+              <li>Solidity 智能合约</li>
+              <li>Web3.py Python 区块链交互</li>
+              <li>以太坊兼容区块链</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
