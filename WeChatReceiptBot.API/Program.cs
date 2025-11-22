@@ -41,7 +41,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new() { Title = "WeChat Receipt Bot API", Version = "v1" });
-    
+
+    // Configure custom schema IDs to avoid conflicts
+    c.CustomSchemaIds(type => type.FullName?.Replace("+", ".") ?? type.Name);
+
     // Configure JWT authentication in Swagger
     c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
     {
@@ -109,8 +112,12 @@ builder.Services.AddAuthorization();
 
 // Register services
 
-
-
+// Register Web3Service dependencies
+builder.Services.AddScoped<Web3Service.API.Domain.Repositories.IBlockchainAccountRepository, Web3Service.API.Infrastructure.Repositories.InMemoryBlockchainAccountRepository>();
+builder.Services.AddScoped<Web3Service.API.Domain.Repositories.ITransactionRepository, Web3Service.API.Infrastructure.Repositories.InMemoryTransactionRepository>();
+builder.Services.AddScoped<Web3Service.API.Domain.Repositories.IContractDeploymentRepository, Web3Service.API.Infrastructure.Repositories.InMemoryContractDeploymentRepository>();
+builder.Services.AddScoped<Web3Service.API.Domain.Services.IWeb3BlockchainService, Web3Service.API.Infrastructure.Services.NetheriumWeb3Service>();
+builder.Services.AddScoped<Web3Service.API.Domain.Services.ISmartContractService, Web3Service.API.Infrastructure.Services.NetheriumSmartContractService>();
 builder.Services.AddScoped<Web3Service.API.Application.Interfaces.IWeb3ApplicationService, Web3Service.API.Application.Services.Web3ApplicationService>();
 
 // Add HTTP client for external services
